@@ -20,7 +20,7 @@ export default function LandingPage() {
             <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight">
               Revolutionize Your Robotic
               <br />
-              <span className="text-blue-300">Assets with RoboLend</span>
+              <span className="text-blue-300 lg:text-5xl">Assets with RoboLend</span>
             </h1>
             <p className="text-lg mt-4 text-gray-200">
               Welcome to the next era in robotic inventory management. RoboLend
