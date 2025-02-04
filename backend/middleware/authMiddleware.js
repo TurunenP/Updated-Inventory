@@ -48,25 +48,3 @@ module.exports = { protect, authorize };
 
 
 
-
-// module.exports = async function isAuthenticated(req, res, next) {
-//   const token = req.cookies.token;
-//   console.log(token)
-
-//   if (!token) {
-//     return res.status(401).json({
-//       message: "Unauthorized. Token is missing.",
-//     });
-//   }
-
- 
-//   jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
-//     if (err) {
-//       return res.status(401).json({
-//         message: 'Unauthorized. Invalid token.',
-//       });
-//     }
-//     req.user = user;
-    
-//   });
-// };

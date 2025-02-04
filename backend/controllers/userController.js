@@ -2,13 +2,9 @@ const asyncHandler = require('express-async-handler');
 const User = require('../models/userModel');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const Token = require('../models/tokenModel');
 const crypto = require('crypto');
-const sendEmail = require('../utils/sendEmail'); // Nodemailer
 require('dotenv').config();
 
-//const sendEmail = require("../services/sendEmail");
-const sendGridEmail = require('../services/sendGridEmail');
 
 //Generate jwt token
 const generateToken = (id) => {
@@ -205,21 +201,6 @@ const getStudents = asyncHandler(async (req, res) => {
   }
 });
 
-//Get login status
-const loginStatus = asyncHandler(async (req, res) => {
-  const token = req.cookies.token;
-  if (!token) {
-    return res.json(false);
-  }
-
-  //Verify token
-  const verified = jwt.verify(token, process.env.JWT_SECRET);
-  if (verified) {
-    return res.json(true);
-  }
-  return res.json(false);
-  //res.send('Login status')
-});
 
 //Update user
 const updateUser = asyncHandler(async (req, res) => {
@@ -249,178 +230,12 @@ const updateUser = asyncHandler(async (req, res) => {
   }
 });
 
-//Change password
-const changePassword = asyncHandler(async (req, res) => {
-  // res.send('Password Changed')
-
-  const user = await User.findById(req.user._id);
-
-  const { oldPassword, password } = req.body;
-
-  if (!user) {
-    res.status(400);
-    throw new Error('User not Found, please signup');
-  }
-  //Validate
-  if (!oldPassword || !password) {
-    res.status(404);
-    throw new Error('Please add old and new password');
-  }
-
-  //Check if password matches password in DB
-  const passwordIsCorrect = await bcrypt.compare(oldPassword, user.password);
-  console.log(
-    'Comparing provided password with hashed password:',
-    password,
-    user.password
-  );
-
-  //Save new password
-  if (user && passwordIsCorrect) {
-    user.password = password;
-    await user.save();
-    res.status(200).send('Password changed succesfully');
-  } else {
-    res.status(400);
-    throw new Error('Old password is incorrect');
-  }
-});
-
-//Forgot password
-
-const forgotPassword = asyncHandler(async (req, res) => {
-  //res.send("Forgot Password");
-  const { email } = req.body;
-  const user = await User.findOne({ email });
-  console.log('User found:', user ? user.email : 'No user found');
-
-  if (!user) {
-    res.status(404);
-    throw new Error('User does not exist');
-  }
-
-  //Delete Token if it exists in DB
-  let token = await Token.findOne({ userId: user._id });
-  if (token) {
-    await token.deleteOne();
-  }
-
-  //Create a reset Token
-  let resetToken = crypto.randomBytes(32).toString('hex') + user._id;
-  console.log(resetToken);
-
-  //Hash token before saving to DB
-  const hashedToken = crypto
-    .createHash('sha256')
-    .update(resetToken)
-    .digest('hex');
-  //console.log(hashedToken)
-
-  //Save Token to DB
-  await new Token({
-    userId: user._id,
-    token: hashedToken,
-    createdAt: Date.now(),
-    expiresAt: Date.now() + 30 * (60 * 1000), //30 mins
-  }).save();
-
-  //Construct Reset Url
-  const resetUrl = `${process.env.FRONTEND_URL}/resetpassword/${resetToken}`;
-
-  // Plain text email content
-  //   const text = `Hello ${user.name},
-
-  // Please use the following link to reset your password:
-  // ${resetUrl}
-
-  // This link is valid for 30 minutes.
-
-  // Regards,
-  // Your Company`;
-
-  //Reset Email
-  const message = `
-<h2>Hello ${user.name}</h2>
-<p>Please use the url below to reset your password</p>
-<p>Please reset link is valid for only 30 minutes</p>
-
-<a href=${resetUrl} clicktracking=off> ${resetUrl}</a>
-
-<p>Regards...</p>
-
-<p>Project App</p>
-`;
-
-  const subject = 'Password Reset Request';
-  const send_to = user.email;
-  const sent_from = process.env.EMAIL_USER;
-
-  //res.send('Forgot pass')
-  try {
-    // Using SendGrid to send the email
-    await sendGridEmail(send_to, subject, message, message); // SendGrid email service
-    // Or use Nodemailer
-    // await sendEmail(subject, message, send_to, sent_from); // Nodemailer email service
-
-    res.status(200).json({ success: true, message: 'Reset Email Sent' });
-  } catch (error) {
-    res.status(500);
-    throw new Error('Email not sent, please try again');
-  }
-});
-
-//Reset Password
-// Reset Password
-const resetPassword = asyncHandler(async (req, res) => {
-  const { password } = req.body;
-  const { resetToken } = req.params;
-
-  // Hash token, then compare to the one in DB
-  const hashedToken = crypto
-    .createHash('sha256')
-    .update(resetToken)
-    .digest('hex');
-
-  // Find token in DB
-  const userToken = await Token.findOne({
-    token: hashedToken,
-    expiresAt: { $gt: Date.now() },
-  });
-
-  if (!userToken) {
-    res.status(404);
-    throw new Error('Invalid or Expired Token');
-  }
-
-  // Find user
-  const user = await User.findOne({ _id: userToken.userId });
-  if (!user) {
-    res.status(404);
-    throw new Error('User not found');
-  }
-
-  // Update user password
-  user.password = await bcrypt.hash(password, 10);
-  await user.save();
-
-  // Delete the used token
-  await userToken.deleteOne();
-
-  res.status(200).json({
-    success: true,
-    message: 'Password reset successful, please log in',
-  });
-});
 
 module.exports = {
   registerUser,
   loginUser,
   logout,
   getUser,
-  loginStatus,
   updateUser,
-  changePassword,
-  forgotPassword,
-  resetPassword,
   getStudents,
 };

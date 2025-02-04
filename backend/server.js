@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const userRoute = require('./routes/userRoute');
-// const productRoute = require('./routes/productRoute');
 const itemRoutes = require('./routes/itemRoute');
 const borrowRoutes = require('./routes/borrow')
 const errorHandler = require('./middleware/errorMiddleware');

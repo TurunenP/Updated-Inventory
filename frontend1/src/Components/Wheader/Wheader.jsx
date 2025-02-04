@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../AuthContext/AuthContext';
 
 const Wheader = () => {
-  const { user, logout } = useAuth(); // Get user and logout from context
+  const { user, logout } = useAuth(); 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -38,7 +38,7 @@ const Wheader = () => {
 
         {/* Dropdown Menu */}
         {isDropdownOpen && (
-          <div className="absolute right-0 mt-12 bg-white shadow-lg text-black rounded-md w-40 z-50">
+          <div className="fixed right-0 mt-[100px] bg-white shadow-lg text-black rounded-md w-40 z-50">
             <ul className="py-2">
               <li
                 onClick={handleLogout}

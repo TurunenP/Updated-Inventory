@@ -32,7 +32,7 @@ const Login = () => {
         <div className="bg-white p-6 rounded-lg shadow-md w-80">
           <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
           {error && <p className="text-red-500 text-sm">{error}</p>}
-          <form onSubmit={handleSubmit} className="flex flex-col">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-6">
             <input
               type="email"
               placeholder="Email"
@@ -47,15 +47,16 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="border p-2 mb-2 rounded"
+              className="w-full p-3 border border-gray-300 rounded"
             />
             <button
               type="submit"
-              className="bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+              className="bg-blue-500 text-white py-2 cursor-pointer rounded hover:bg-blue-600"
             >
               Login
             </button>
           </form>
+          
         </div>
       </div>
     </div>
