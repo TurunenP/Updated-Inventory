@@ -44,12 +44,12 @@ export const AuthProvider = ({ children }) => {
       if (response.data) {
         await fetchUser(); // Refresh user details after login
       }
-       
-      if (user.role === 'admin') {
-        navigate('/Staff'); // Redirect to the admin dashboard
-      } else {
-        navigate('/Student'); // Redirect to the user dashboard
-      }
+     if (response.data.role === 'admin') {
+  navigate('/Staff'); // Redirect to the admin dashboard
+} else {
+  navigate('/Student'); // Redirect to the user dashboard
+}
+
     } catch (error) {
       console.error('Login failed:', error);
       throw new Error('Invalid credentials');
