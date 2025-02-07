@@ -5,10 +5,9 @@ const bcrypt = require('bcryptjs');
 const crypto = require('crypto');
 require('dotenv').config();
 
-
 //Generate jwt token
 const generateToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '1d' });
+  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '24h' });
 };
 
 // Register user
@@ -56,7 +55,7 @@ const registerUser = asyncHandler(async (req, res) => {
   res.cookie('token', token, {
     path: '/',
     httpOnly: true,
-  
+    maxAge: 24 * 60 * 60 * 1000,
     sameSite: 'strict',
     secure: process.env.NODE_ENV === 'production',
   });
@@ -117,8 +116,9 @@ const loginUser = async (req, res) => {
     res.cookie('token', token, {
       path: '/',
       httpOnly: true,
+      maxAge: 24 * 60 * 60 * 1000,
       sameSite: 'strict',
-      secure: process.env.NODE_ENV === "production",
+      secure: process.env.NODE_ENV === 'production',
     });
 
     // Get user info
@@ -167,7 +167,6 @@ const getUser = async (req, res) => {
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET); // Decode token
 
-
     const userId = decoded.id; // Extract userId from token
 
     const userProfile = await User.findById(userId);
@@ -185,7 +184,6 @@ const getUser = async (req, res) => {
   }
 };
 
-
 //Get students profile/data
 const getStudents = asyncHandler(async (req, res) => {
   //res.send('Get User Data')
@@ -200,7 +198,6 @@ const getStudents = asyncHandler(async (req, res) => {
     throw new Error('User not Found');
   }
 });
-
 
 //Update user
 const updateUser = asyncHandler(async (req, res) => {
@@ -229,7 +226,6 @@ const updateUser = asyncHandler(async (req, res) => {
     throw new Error('User not Found');
   }
 });
-
 
 module.exports = {
   registerUser,

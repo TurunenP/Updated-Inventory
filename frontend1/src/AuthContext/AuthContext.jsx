@@ -7,7 +7,7 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const fetchUser = async () => {
     try {
@@ -44,12 +44,12 @@ export const AuthProvider = ({ children }) => {
       if (response.data) {
         await fetchUser(); // Refresh user details after login
       }
-     if (response.data.role === 'admin') {
-  navigate('/Staff'); // Redirect to the admin dashboard
-} else {
-  navigate('/Student'); // Redirect to the user dashboard
-}
 
+      if (response.data.role === 'admin') {
+        navigate('/Staff'); // Redirect to the admin dashboard
+      } else {
+        navigate('/Student'); // Redirect to the user dashboard
+      }
     } catch (error) {
       console.error('Login failed:', error);
       throw new Error('Invalid credentials');
@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      await axios.post(
+      await axios.get(
         'http://localhost:5000/api/users/logout',
         {},
         { withCredentials: true }

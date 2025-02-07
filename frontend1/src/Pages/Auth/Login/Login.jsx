@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Bhome from '../../../Components/BHOME/Bhome';
 
 const Login = () => {
-  const { login, user } = useAuth()
+  const { login } = useAuth()
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await login(email, password);
-     
+    
     } catch (err) {
       setError(err.message);
     }
