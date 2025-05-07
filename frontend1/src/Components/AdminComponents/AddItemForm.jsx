@@ -15,7 +15,6 @@ const ItemForm = () => {
   const [adminUser, setAdminUser] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate()
-
   const locationOptions = {
     LabA: ['CabinetA', 'CabinetB', 'Trolley', 'Components'],
     LabB: [
@@ -68,7 +67,6 @@ const ItemForm = () => {
         category,
         adminUser,
       });
-
 
       // Handle the response
       if (response.status === 200 || response.status === 201) {

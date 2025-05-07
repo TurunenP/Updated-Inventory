@@ -14,7 +14,6 @@ const createItem = async (req, res) => {
       adminUser,
     } = req.body;
 
-
     // Validate if required fields are present
     if (
       !lab ||
@@ -46,7 +45,6 @@ const createItem = async (req, res) => {
       category,
       adminUser,
     });
-
 
 
     // Save the new item to the database
