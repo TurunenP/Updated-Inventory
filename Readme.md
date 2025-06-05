@@ -72,13 +72,14 @@ Make sure you have the following installed on your machine:
 
 Feel free to contribute to this project. Open issues or submit pull requests.
 
+This project was developed by:
+
+- [@TurunenP](https://github.com/TurunenP) 
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 ```
 
 
-
-
-## Inventory
 
