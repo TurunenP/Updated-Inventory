@@ -59,7 +59,7 @@ Make sure you have the following installed on your machine:
 2. Open a new terminal and start the Vue.js frontend:
 
    ```bash
-   cd frontend
+   cd frontend1
    npm run dev
    ```
 
