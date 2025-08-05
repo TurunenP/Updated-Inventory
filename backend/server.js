@@ -1,14 +1,14 @@
-const dotenv = require('dotenv').config();
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const userRoute = require('./routes/userRoute');
-const itemRoutes = require('./routes/itemRoute');
-const borrowRoutes = require('./routes/borrow')
-const errorHandler = require('./middleware/errorMiddleware');
-const cookieParser = require('cookie-parser');
-const path = require('path');
+const dotenv = require("dotenv").config();
+const express = require("express");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const userRoute = require("./routes/userRoute");
+const itemRoutes = require("./routes/itemRoute");
+const borrowRoutes = require("./routes/borrow");
+const errorHandler = require("./middleware/errorMiddleware");
+const cookieParser = require("cookie-parser");
+const path = require("path");
 
 const app = express();
 
@@ -18,25 +18,25 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'https://robo-lab-system.netlify.app'], // Add production URL here
+    origin: ["http://localhost:5173", "https://robo-lab-system.netlify.app"], // Add production URL here
     credentials: true, // Allow cookies
   })
 );
 
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Routes Middleware
-app.use('/api/users', userRoute);
+app.use("/api/users", userRoute);
 // app.use('/api/products', productRoute);
-app.use('/api/items', itemRoutes);
-app.use('/api', borrowRoutes);
+app.use("/api/items", itemRoutes);
+app.use("/api", borrowRoutes);
 
 // Routes
-app.get('/', (req, res) => {
-  res.send('HomePage');
+app.get("/", (req, res) => {
+  res.send("HomePage");
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5002;
 
 // Error Handling Middleware
 app.use(errorHandler);

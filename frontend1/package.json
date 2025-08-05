@@ -3,17 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-<<<<<<< HEAD
-    "preview": "vite preview",
-    "test": "vitest"
-=======
-    "preview": "vite preview"
->>>>>>> 28c936fd210e4b2594a71bcd8ab762d815c195b7
-  },
+
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "test": "vitest"
+},
+
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "axios": "^1.7.9",
