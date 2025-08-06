@@ -242,6 +242,3 @@ This project is licensed under the [MIT License](LICENSE).
 ```
 
 ---
-
-This version should feel slightly more advanced, polished, and ready for production or public-facing use.
-```
