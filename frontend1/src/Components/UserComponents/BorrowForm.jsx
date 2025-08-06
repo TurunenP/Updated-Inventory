@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../AuthContext/AuthContext';
-import API from '../../API/Api';
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../AuthContext/AuthContext";
+import API from "../../API/Api";
 
 const BorrowForm = () => {
   const { user } = useAuth();
-  const [equipmentName, setEquipmentName] = useState('');
-  const [returnDate, setReturnDate] = useState('');
+  const [equipmentName, setEquipmentName] = useState("");
+  const [returnDate, setReturnDate] = useState("");
   const [quantity, setQuantity] = useState(1);
   const [loading, setLoading] = useState(false);
   const [items, setItems] = useState([]); // Store available items
@@ -16,10 +16,10 @@ const BorrowForm = () => {
     // Fetch available items
     const fetchItems = async () => {
       try {
-        const response = await API.get('/api/items/');
+        const response = await API.get("/api/items/");
         setItems(response.data);
       } catch (error) {
-        console.error('Error fetching items:', error.message);
+        console.error("Error fetching items:", error.message);
       }
     };
     fetchItems();
@@ -27,7 +27,7 @@ const BorrowForm = () => {
     // Set return date (2 weeks from today)
     const twoWeeksLater = new Date();
     twoWeeksLater.setDate(twoWeeksLater.getDate() + 14);
-    setReturnDate(twoWeeksLater.toISOString().split('T')[0]);
+    setReturnDate(twoWeeksLater.toISOString().split("T")[0]);
   }, []);
 
   const handleSubmit = async (e) => {
@@ -40,7 +40,7 @@ const BorrowForm = () => {
     );
 
     if (!selectedItem) {
-      alert('Equipment not found');
+      alert("Equipment not found");
       setLoading(false);
       return;
     }
@@ -53,7 +53,7 @@ const BorrowForm = () => {
 
     try {
       await API.post(
-        '/api/borrow',
+        "/api/borrow",
         {
           studentName: user?.name,
           equipmentName,
@@ -73,10 +73,10 @@ const BorrowForm = () => {
         )
       );
 
-      navigate('/student/borrowed');
+      navigate("/student/borrowed");
     } catch (error) {
-      console.error('Error borrowing item:', error);
-      alert('Failed to borrow item');
+      console.error("Error borrowing item:", error);
+      alert("Failed to borrow item");
     }
 
     setLoading(false);
@@ -94,13 +94,28 @@ const BorrowForm = () => {
             <label className="block font-semibold text-gray-700">
               Equipment Name
             </label>
-            <input
+            {/* <input
               type="text"
               value={equipmentName}
               onChange={(e) => setEquipmentName(e.target.value)}
               required
               className="w-full p-2 border rounded-lg bg-gray-100 focus:ring-2 focus:ring-blue-500"
-            />
+            /> */}
+            <select
+              value={equipmentName}
+              onChange={(e) => setEquipmentName(e.target.value)}
+              required
+              className="w-full p-2 border rounded-lg bg-gray-100 focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="" disabled>
+                Select Equipment
+              </option>
+              {items.map((item) => (
+                <option key={item._id} value={item.name}>
+                  {item.name} ({item.quantity} available)
+                </option>
+              ))}
+            </select>
           </div>
 
           {/* Quantity */}
@@ -125,7 +140,7 @@ const BorrowForm = () => {
             </label>
             <input
               type="text"
-              value={user?.name || ''}
+              value={user?.name || ""}
               readOnly
               className="w-full p-2 border rounded-lg bg-gray-200 text-gray-600 cursor-not-allowed"
             />
@@ -138,7 +153,7 @@ const BorrowForm = () => {
             </label>
             <input
               type="email"
-              value={user?.email || ''}
+              value={user?.email || ""}
               readOnly
               className="w-full p-2 border rounded-lg bg-gray-200 text-gray-600 cursor-not-allowed"
             />
@@ -164,11 +179,11 @@ const BorrowForm = () => {
             className={`w-full p-2 rounded-lg text-white font-semibold transition 
               ${
                 loading || !equipmentName || quantity < 1
-                  ? 'bg-gray-400 cursor-not-allowed'
-                  : 'bg-blue-600 hover:bg-blue-700'
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-blue-600 hover:bg-blue-700"
               }`}
           >
-            {loading ? 'Submitting...' : 'Borrow'}
+            {loading ? "Submitting..." : "Borrow"}
           </button>
         </form>
       </div>

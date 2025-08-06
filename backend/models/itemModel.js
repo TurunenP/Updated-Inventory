@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 // Define the Schema for the Item
 const itemSchema = new mongoose.Schema(
@@ -6,39 +6,39 @@ const itemSchema = new mongoose.Schema(
     lab: {
       type: String,
       required: true,
-      enum: ['LabA', 'LabB'], // Only LabA or LabB
+      enum: ["LabA", "LabB"], // Only LabA or LabB
     },
     location: {
       type: String,
       required: true,
       enum: [
-        'CabinetA',
-        'CabinetB',
-        'Trolley',
-        'Components', // LabA locations
-        'Tool Storage1',
-        'Tool Storage1B',
-        'Tool Storage2',
-        'Tool Storage2B', // LabB locations
+        "CabinetA",
+        "CabinetB",
+        "Trolley",
+        "Components", // LabA locations
+        "Tool Storage1",
+        "Tool Storage1B",
+        "Tool Storage2",
+        "Tool Storage2B", // LabB locations
       ],
     },
     section: {
       type: String,
       enum: [
-        '3D Printing',
-        'Electronics',
-        'Control Systems',
-        'Robots and Peripherals',
-        'Pneumatics1',
-        'Grippers2', 
-        'Power Sources',
-        'Cameras',
-        'Staff1',
-        'Staff2', 
+        "3D Printing",
+        "Electronics",
+        "Control Systems",
+        "Robots and Peripherals",
+        "Pneumatics1",
+        "Grippers2",
+        "Power Sources",
+        "Cameras",
+        "Staff1",
+        "Staff2",
       ],
       required: function () {
         // Section is required only for CabinetA and CabinetB
-        return this.location === 'CabinetA' || this.location === 'CabinetB';
+        return this.location === "CabinetA" || this.location === "CabinetB";
       },
     },
     name: {
@@ -51,6 +51,10 @@ const itemSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    totalQuantity: {
+      type: Number,
+      required: true,
+    },
     quantity: {
       type: Number,
       required: true,
@@ -59,17 +63,23 @@ const itemSchema = new mongoose.Schema(
       type: String,
       required: true,
       enum: [
-        'DEMO',
-        'LEVERS',
-        'ROBOTICS',
-        'RELAYS',
-        'SENSORS',
-        'MOTORS',
-        'CIRCUITS',
-        'ACTUATORS',
-        'GRIPPERS',
+        "DEMO",
+        "LEVERS",
+        "ROBOTICS",
+        "RELAYS",
+        "SENSORS",
+        "MOTORS",
+        "CIRCUITS",
+        "ACTUATORS",
+        "GRIPPERS",
       ],
     },
+    itemId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Item",
+      required: true,
+    },
+
     adminUser: {
       type: String,
       required: true,
@@ -80,6 +90,6 @@ const itemSchema = new mongoose.Schema(
 ); // Automatically add createdAt and updatedAt
 
 // Create the model from the schema
-const Item = mongoose.model('Item', itemSchema);
+const Item = mongoose.model("Item", itemSchema);
 
 module.exports = Item;
