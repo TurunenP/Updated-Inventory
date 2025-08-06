@@ -16,17 +16,39 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://updated-inventory.vercel.app",
+];
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://updated-inventory.vercel.app",
-      // "https://robo-lab-system.netlify.app",
-    ],
-
-    credentials: true, // Allow cookies
+    origin: function (origin, callback) {
+      console.log("CORS Origin:", origin);
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.indexOf(origin) === -1) {
+        return callback(new Error("Not allowed by CORS"), false);
+      }
+      return callback(null, true);
+    },
+    credentials: true,
   })
 );
+
+app.options("*", cors());
+
+// app.use(
+//   cors({
+//     origin: [
+//       "http://localhost:5173",
+//       "https://updated-inventory.vercel.app",
+//       // "https://robo-lab-system.netlify.app",
+//     ],
+
+//     credentials: true, // Allow cookies
+//   })
+// );
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
