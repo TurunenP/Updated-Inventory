@@ -66,8 +66,8 @@ Use the following accounts for testing:
 
 | Role    | Email                  | Password    |
 |---------|------------------------|-------------|
-| Staff   | staff@university.edu   | staff123    |
-| Student | student@example.com    | student123  |
+| Staff   | Uniad@university.edu   | Uniad1    |
+| Student | test@gmail.com         | 123456  |
 
 > You can add your own users directly in the database if needed.
 
