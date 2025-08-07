@@ -35,22 +35,17 @@ A robust, production-ready **MERN stack** application tailored for managing inve
 
 ## 📸 Screenshots
 
----
-
 ### Home Page
 ![Home Page](https://github.com/user-attachments/assets/f4d00185-c8a6-4892-9366-5547e42b8f93)
 
 ---
 
-### Admin Add Item
-<img width="600" alt="Admin Add Item" src="https://github.com/user-attachments/assets/08c4eec6-aa24-4ea2-bc02-0ce87cd7f75a" />
+### More Screenshots
 
----
+| Admin Add Item | Explore Labs |
+|---------------|--------------|
+| <img width="600" alt="Admin Add Item" src="https://github.com/user-attachments/assets/08c4eec6-aa24-4ea2-bc02-0ce87cd7f75a" /> | <img width="600" alt="Explore Labs" src="https://github.com/user-attachments/assets/c8a76a41-8472-4aad-8df3-78aedc0ec2a9" /> |
 
-### Explore Labs
-<img width="600" alt="Explore Labs" src="https://github.com/user-attachments/assets/c8a76a41-8472-4aad-8df3-78aedc0ec2a9" />
-
----
 
 ## ⚙️ Features
 
