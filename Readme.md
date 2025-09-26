@@ -14,6 +14,7 @@ A robust, production-ready **MERN stack** application tailored for managing inve
 
 - [Live Demo](#-live-demo)
 - [Screenshots](#-screenshots)
+- [Tech Stack](#-sech stack)
 - [Features](#-features)
 - [Registration Instructions](#-registration-instructions)
 - [Prerequisites](#-prerequisites)
@@ -37,6 +38,26 @@ A robust, production-ready **MERN stack** application tailored for managing inve
 
 ### Home Page
 ![Home Page](https://github.com/user-attachments/assets/f4d00185-c8a6-4892-9366-5547e42b8f93)
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer        | Technology           |
+|---------------|------------------------|
+| Frontend      | React, Tailwind CSS     |
+| Backend       | Node.js, Express        |
+| Database      | MongoDB                 |
+| Hosting       | Vercel / (or your host) |
+
+You can also use badges:
+
+![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)  
+![TailwindCSS](https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?logo=tailwind-css)  
+![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)  
+![Express](https://img.shields.io/badge/Framework-Express-lightgrey?logo=express)  
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)  
+![Vercel](https://img.shields.io/badge/Hosting-Vercel-black?logo=vercel)  
 
 ---
 
