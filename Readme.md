@@ -14,44 +14,15 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 
 ## 📚 Table of Contents
 
-- [Live Demo](#live-demo) 
-- [Screenshots](#screenshots)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [Registration Instructions](#registration-instructions)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Deployment Instructions](#deployment-instructions)
-- [CORS Configuration](#cors-configuration)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-
-
-## 📚 Table of Contents
-
-- [Live Demo](#live-demo)  
-- [Screenshots](#screenshots)  
-- [Tech Stack](#tech-stack)  
-- [Features](#features)  
-- [Registration Instructions](#registration-instructions)  
-- [Prerequisites](#prerequisites)  
-- [Install and Run Locally](#install-and-run-locally)  
-  - [Backend Setup](#backend-setup)  
-  - [Frontend Setup](#frontend-setup)  
-- [Deployment Instructions](#deployment-instructions)  
-- [CORS Configuration](#cors-configuration)  
-- [Project Structure](#project-structure)  
-- [Contributing](#contributing)  
-- [License](#license)
-
 - [Live Demo](#-live-demo)
 - [Screenshots](#-screenshots)
 - [Tech Stack](#-tech-stack)
 - [Features](#-features)
 - [Registration Instructions](#-registration-instructions)
 - [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
+- [Installation](#-installation) 
+  - [Backend Setup](#-backend-setup)  
+  - [Frontend Setup](#-frontend-setup) 
 - [Deployment Instructions](#-deployment-instructions)
 - [CORS Configuration](#-cors-configuration)
 - [Project Structure](#-project-structure)
