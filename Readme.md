@@ -30,6 +30,8 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 ## Table of Contents
 - [Live Demo](#live-demo)
 - [Screenshots](#screenshots)
+- [Screenshots](https://github.com/TurunenP/Updated-Inventory#screenshots-1)
+
 - [Tech Stack](#tech-stack)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
@@ -43,7 +45,6 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 
 ---
 
----
 
 ## 🚀 Live Demo
 
