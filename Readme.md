@@ -14,7 +14,7 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 
 ## 📚 Table of Contents
 
-- [Live Demo](#live-demo)
+- [Live Demo](#live-demo) 
 - [Screenshots](#screenshots)
 - [Tech Stack](#tech-stack)
 - [Features](#features)
@@ -27,22 +27,39 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 - [Contributing](#contributing)
 - [License](#license)
 
-## Table of Contents
-- [Live Demo](#live-demo)
-- [Screenshots](#Screenshots)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Deployment Instructions](#deployment-instructions)
-- [CORS Configuration](#cors-configuration)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
+
+## 📚 Table of Contents
+
+- [Live Demo](#live-demo)  
+- [Screenshots](#screenshots)  
+- [Tech Stack](#tech-stack)  
+- [Features](#features)  
+- [Registration Instructions](#registration-instructions)  
+- [Prerequisites](#prerequisites)  
+- [Install and Run Locally](#install-and-run-locally)  
+  - [Backend Setup](#backend-setup)  
+  - [Frontend Setup](#frontend-setup)  
+- [Deployment Instructions](#deployment-instructions)  
+- [CORS Configuration](#cors-configuration)  
+- [Project Structure](#project-structure)  
+- [Contributing](#contributing)  
 - [License](#license)
 
+- [Live Demo](#-live-demo)
+- [Screenshots](#-screenshots)
+- [Tech Stack](#-tech-stack)
+- [Features](#-features)
+- [Registration Instructions](#-registration-instructions)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Deployment Instructions](#-deployment-instructions)
+- [CORS Configuration](#-cors-configuration)
+- [Project Structure](#-project-structure)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+
 ---
-
-
 ## 🚀 Live Demo
 
 - **Frontend**: [https://updated-inventory.vercel.app](https://updated-inventory.vercel.app)
@@ -59,15 +76,16 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 
 ## 🛠️ Tech Stack
 
-[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)], [Render](https://render.com) 
-[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)] | [Render](https://render.com) 
-[![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)](#tech-stack)  
-[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)] [React.js](https://react.dev/)
-[![TailwindCSS](https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?logo=tailwind-css)](#tech-stack)  
-[![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)](#tech-stack)  
-[![Express](https://img.shields.io/badge/Framework-Express-lightgrey?logo=express)](#tech-stack)  
-[![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)](#tech-stack)  
-[![Vercel](https://img.shields.io/badge/Hosting-Vercel-black?logo=vercel)](#tech-stack) 
+[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)](https://reactjs.org/)  
+[![TailwindCSS](https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)  
+[![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)](https://nodejs.org/)  
+[![Express](https://img.shields.io/badge/Framework-Express-lightgrey?logo=express)](https://expressjs.com/)  
+[![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)](https://www.mongodb.com/)  
+
+### Hosting
+[![Frontend: Vercel](https://img.shields.io/badge/Frontend-Vercel-black?logo=vercel)](https://vercel.com/)  
+[![Backend: Vercel](https://img.shields.io/badge/Backend-Vercel-black?logo=vercel)](https://vercel.com/)
+
 
 | Layer        | Technology           |
 |---------------|------------------------|
@@ -278,15 +296,16 @@ Updated-Inventory/
 ---
 
 ## 🤝 Contributing
-
 Contributions, issues, and feature requests are welcome!
-      * `Fork the repository`
-      * `Create a new branch (git checkout -b feature-name)`
-      * `Push to branch (git push origin feature-name)`
-      * `Open a pull request`
-      * `Please open an issue or submit a pull request`
-     
-      
+
+   * `Fork the repository`
+   * `Create a new branch: git checkout -b feature-name` 
+   * `Commit your changes: git commit -m "feat: add awesome feature"`
+   * `Push to your branch: git push origin feature-name` 
+   * `Open a pull request describing your changes`
+   * `Or open an issue to discuss ideas before implementing`     
+
+
 Developed by:
 
 * [@TurunenP](https://github.com/TurunenP)
