@@ -40,6 +40,7 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 - [Contributing](#contributing)
 - [License](#license)
 
+
 ---
 
 ---
@@ -61,7 +62,9 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 ## 🛠️ Tech Stack
 
 [![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)], [Render](https://render.com) 
-1. Create a new **Web Service** on [React.js](https://react.dev/)
+[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)] | [Render](https://render.com) 
+[![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)](#tech-stack)  
+[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)] [React.js](https://react.dev/)
 [![TailwindCSS](https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?logo=tailwind-css)](#tech-stack)  
 [![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)](#tech-stack)  
 [![Express](https://img.shields.io/badge/Framework-Express-lightgrey?logo=express)](#tech-stack)  
@@ -73,7 +76,7 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 | Frontend      | [React.js](https://react.dev/), [Tailwindcss](https://tailwindcss.com/)     |
 | Backend       | Node.js, Express        |
 | Database      | MongoDB                 |
-| Hosting       | Vercel / (or your host) |
+| Hosting       | Vercel |
 
 ---
 
