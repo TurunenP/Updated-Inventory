@@ -27,6 +27,20 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 - [Contributing](#contributing)
 - [License](#license)
 
+## Table of Contents
+- [Live Demo](#live-demo)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Deployment Instructions](#deployment-instructions)
+- [CORS Configuration](#cors-configuration)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
 
 ---
 
@@ -46,7 +60,8 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 
 ## 🛠️ Tech Stack
 
-[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)](#tech-stack)  
+[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)], [Render](https://render.com) 
+1. Create a new **Web Service** on [React.js](https://react.dev/)
 [![TailwindCSS](https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?logo=tailwind-css)](#tech-stack)  
 [![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)](#tech-stack)  
 [![Express](https://img.shields.io/badge/Framework-Express-lightgrey?logo=express)](#tech-stack)  
@@ -55,7 +70,7 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 
 | Layer        | Technology           |
 |---------------|------------------------|
-| Frontend      | React, Tailwind CSS     |
+| Frontend      | [React.js](https://react.dev/), [Tailwindcss](https://tailwindcss.com/)     |
 | Backend       | Node.js, Express        |
 | Database      | MongoDB                 |
 | Hosting       | Vercel / (or your host) |
@@ -251,9 +266,14 @@ Updated-Inventory/
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-Please open an issue or submit a pull request.
-
-Developed with care by:
+      * `Fork the repository`
+      * `Create a new branch (git checkout -b feature-name)`
+      * `Push to branch (git push origin feature-name)`
+      * `Open a pull request`
+      * `Please open an issue or submit a pull request`
+     
+      
+Developed by:
 
 * [@TurunenP](https://github.com/TurunenP)
 
