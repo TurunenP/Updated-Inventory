@@ -1,7 +1,9 @@
-# INVENTORY MANAGEMENT SYSTEM FOR ROBOTIC LABS  
-### A User-Centred Web-Based Solution
+# 🤖 Robotics Lab Inventory System (Thesis Project)
+### A User-Centred, Production-Ready Web Application
 
-A robust, production-ready **MERN stack** application tailored for managing inventory in robotics lab environments. This system enables real-time tracking, secure access, and intuitive item management through a modern web interface.
+A full-stack **MERN stack** application developed as my **Bachelor’s thesis** for the University of Oulu’s Robotics Lab.  
+This system helps lab staff manage equipment inventory with **real-time tracking, secure access, and intuitive item management** through a modern web interface.
+
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/TurunenP/Updated-Inventory/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
@@ -12,18 +14,19 @@ A robust, production-ready **MERN stack** application tailored for managing inve
 
 ## 📚 Table of Contents
 
-- [Live Demo](#-live-demo)
-- [Screenshots](#-screenshots)
-- [Tech Stack](#-sech stack)
-- [Features](#-features)
-- [Registration Instructions](#-registration-instructions)
-- [Prerequisites](#-prerequisites)
+- [Live Demo](#live-demo)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Registration Instructions](#registration-instructions)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Deployment Instructions](#-deployment-instructions)
-- [CORS Configuration](#-cors-configuration)
-- [Project Structure](#-project-structure)
+- [Deployment Instructions](#deployment-instructions)
+- [CORS Configuration](#cors-configuration)
+- [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#-license)
+- [License](#license)
+
 
 ---
 
@@ -43,21 +46,19 @@ A robust, production-ready **MERN stack** application tailored for managing inve
 
 ## 🛠️ Tech Stack
 
+[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)](#tech-stack)  
+[![TailwindCSS](https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?logo=tailwind-css)](#tech-stack)  
+[![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)](#tech-stack)  
+[![Express](https://img.shields.io/badge/Framework-Express-lightgrey?logo=express)](#tech-stack)  
+[![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)](#tech-stack)  
+[![Vercel](https://img.shields.io/badge/Hosting-Vercel-black?logo=vercel)](#tech-stack) 
+
 | Layer        | Technology           |
 |---------------|------------------------|
 | Frontend      | React, Tailwind CSS     |
 | Backend       | Node.js, Express        |
 | Database      | MongoDB                 |
 | Hosting       | Vercel / (or your host) |
-
-You can also use badges:
-
-![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)  
-![TailwindCSS](https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?logo=tailwind-css)  
-![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)  
-![Express](https://img.shields.io/badge/Framework-Express-lightgrey?logo=express)  
-![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)  
-![Vercel](https://img.shields.io/badge/Hosting-Vercel-black?logo=vercel)  
 
 ---
 
