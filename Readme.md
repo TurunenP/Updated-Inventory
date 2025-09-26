@@ -29,9 +29,7 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 
 ## Table of Contents
 - [Live Demo](#live-demo)
-- [Screenshots](#screenshots)
-- [Screenshots](https://github.com/TurunenP/Updated-Inventory#screenshots-1)
-
+- [Screenshots](#Screenshots)
 - [Tech Stack](#tech-stack)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
@@ -41,7 +39,6 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
-
 
 ---
 
@@ -74,10 +71,23 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 
 | Layer        | Technology           |
 |---------------|------------------------|
-| Frontend      | [React.js](https://react.dev/), [Tailwindcss](https://tailwindcss.com/)     |
-| Backend       | Node.js, Express        |
-| Database      | MongoDB                 |
-| Hosting       | Vercel |
+| Frontend      | [React.js](https://react.dev/), [Tailwindcss](https://tailwindcss.com/) |
+| Backend       | [Node.js](https://nodejs.org/en), [Express.js](https://expressjs.com/) |
+| Database      | [MongoDB](https://www.mongodb.com/) |
+| Hosting       | [Vercel](https://vercel.com/docs) |
+
+---
+
+
+## 🛠️ Tech Stack
+
+[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)](https://reactjs.org/)  
+[![TailwindCSS](https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)  
+[![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)](https://nodejs.org/)  
+[![Express](https://img.shields.io/badge/Framework-Express-lightgrey?logo=express)](https://expressjs.com/)  
+[![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)](https://www.mongodb.com/)  
+[![Vercel](https://img.shields.io/badge/Hosting-Vercel-black?logo=vercel)](https://vercel.com/)
+
 
 ---
 
