@@ -20,7 +20,7 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 - [Features](#️-features)
 - [Registration Instructions](#-registration-instructions)
 - [Prerequisites](#-prerequisites)
-- [Installation](#-installation) 
+- [Installation](#-installation)
   - [Clone the repository](#1-clone-the-repository)
   - [Backend Setup](#2-backend-setup)
   - [Frontend Setup](#3-frontend-setup)
@@ -131,7 +131,7 @@ Optional for development/testing:
 
 ---
 
-## 🧑‍💻 Installation
+## 📦 Installation
 
 ### 1. Clone the repository
 
