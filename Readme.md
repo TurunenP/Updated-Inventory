@@ -131,7 +131,7 @@ Optional for development/testing:
 
 ---
 
-## Installation
+## 🧑‍💻 Installation
 
 ### 1. Clone the repository
 
