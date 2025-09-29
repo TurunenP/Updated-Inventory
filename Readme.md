@@ -46,28 +46,6 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 
 ---
 
-## 🛠️ Tech Stack
-
-[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)](https://reactjs.org/)  
-[![TailwindCSS](https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)  
-[![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)](https://nodejs.org/)  
-[![Express](https://img.shields.io/badge/Framework-Express-lightgrey?logo=express)](https://expressjs.com/)  
-[![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)](https://www.mongodb.com/)  
-
-### Hosting
-[![Frontend: Vercel](https://img.shields.io/badge/Frontend-Vercel-black?logo=vercel)](https://vercel.com/)  
-[![Backend: Vercel](https://img.shields.io/badge/Backend-Vercel-black?logo=vercel)](https://vercel.com/)
-
-
-| Layer        | Technology           |
-|---------------|------------------------|
-| Frontend      | [React.js](https://react.dev/), [Tailwindcss](https://tailwindcss.com/) |
-| Backend       | [Node.js](https://nodejs.org/en), [Express.js](https://expressjs.com/) |
-| Database      | [MongoDB](https://www.mongodb.com/) |
-| Hosting       | [Vercel](https://vercel.com/docs) |
-
----
-
 
 ## 🛠️ Tech Stack
 
@@ -77,8 +55,7 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 | Frontend     | [![React](https://img.shields.io/badge/React-blue?logo=react)](https://reactjs.org/) [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/) |
 | Backend      | [![Node.js](https://img.shields.io/badge/Node.js-green?logo=node.js)](https://nodejs.org/) [![Express](https://img.shields.io/badge/Express-lightgrey?logo=express)](https://expressjs.com/) |
 | Database     | [![MongoDB](https://img.shields.io/badge/MongoDB-green?logo=mongodb)](https://www.mongodb.com/) |
-| Hosting      | [![Vercel](https://img.shields.io/badge/Vercel-black?logo=vercel)](https://vercel.com/) |
-
+| Hosting      | Frontend: [![Vercel](https://img.shields.io/badge/Vercel-black?logo=vercel)](https://vercel.com/) <br> Backend: [![Render](https://img.shields.io/badge/Render-ff5a5f?logo=render)](https://render.com/) |
 
 
 ---
