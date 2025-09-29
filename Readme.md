@@ -71,12 +71,14 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 
 ## 🛠️ Tech Stack
 
+
 | Layer        | Technology |
 |--------------|------------|
-| Frontend     | [React.js](https://react.dev/) ![React](https://img.shields.io/badge/React-blue?logo=react), [TailwindCSS](https://tailwindcss.com/) ![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css) |
-| Backend      | [Node.js](https://nodejs.org/) ![Node](https://img.shields.io/badge/Node.js-green?logo=node.js), [Express](https://expressjs.com/) ![Express](https://img.shields.io/badge/Express-lightgrey?logo=express) |
-| Database     | [MongoDB](https://www.mongodb.com/) ![MongoDB](https://img.shields.io/badge/MongoDB-green?logo=mongodb) |
-| Hosting      | [Vercel](https://vercel.com/) ![Vercel](https://img.shields.io/badge/Vercel-black?logo=vercel) |
+| Frontend     | [![React](https://img.shields.io/badge/React-blue?logo=react)](https://reactjs.org/) [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/) |
+| Backend      | [![Node.js](https://img.shields.io/badge/Node.js-green?logo=node.js)](https://nodejs.org/) [![Express](https://img.shields.io/badge/Express-lightgrey?logo=express)](https://expressjs.com/) |
+| Database     | [![MongoDB](https://img.shields.io/badge/MongoDB-green?logo=mongodb)](https://www.mongodb.com/) |
+| Hosting      | [![Vercel](https://img.shields.io/badge/Vercel-black?logo=vercel)](https://vercel.com/) |
+
 
 
 ---
