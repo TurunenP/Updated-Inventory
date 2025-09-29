@@ -16,8 +16,8 @@ This system helps lab staff manage equipment inventory with **real-time tracking
 
 - [Live Demo](#-live-demo)
 - [Screenshots](#-screenshots)
-- [Tech Stack](#-tech-stack)
-- [Features](#-features)
+- [Tech Stack](#️-tech-stack)
+- [Features](#️-features)
 - [Registration Instructions](#-registration-instructions)
 - [Prerequisites](#-prerequisites)
 - [Installation](#-installation) 
@@ -131,7 +131,7 @@ Optional for development/testing:
 
 ---
 
-## 🧑‍💻 Installation
+## Installation
 
 ### 1. Clone the repository
 
