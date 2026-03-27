@@ -1,8 +1,7 @@
 # 🤖 Robotics Lab Inventory System (Thesis Project)
 ### A User-Centred, Production-Ready Web Application
 
-A full-stack **MERN stack** application developed as my **Bachelor’s thesis** for the University of Oulu’s Robotics Lab.  
-This system helps lab staff manage equipment inventory with **real-time tracking, secure access, and intuitive item management** through a modern web interface.
+A full-stack MERN (MongoDB, Express, React, Node.js) web application developed as my Bachelor’s thesis at the University of Oulu Robotics Lab. The system allows lab staff to efficiently manage inventory with real-time tracking, secure access, and intuitive item management.
 
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/TurunenP/Updated-Inventory/actions)
