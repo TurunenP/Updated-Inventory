@@ -18,6 +18,7 @@ The system supports efficient inventory management for lab staff, including real
 - [Screenshots](#-screenshots)
 - [Tech Stack](#️-tech-stack)
 - [Features](#️-features)
+  - [Login Credentials](#1-login-credentials)
 - [Registration Instructions](#-registration-instructions)
 - [Prerequisites](#-prerequisites)
 - [Installation](#-installation)
@@ -84,7 +85,7 @@ The system supports efficient inventory management for lab staff, including real
 - Users without an email in this format will be registered as **students** (with limited access).
 - This is used to restrict access to administrative features like inventory management or approvals.
 
-### 👥 Sample Login Credentials
+### 👥 Login Credentials
 
 Use the following accounts for testing:
 
