@@ -18,7 +18,6 @@ The system supports efficient inventory management for lab staff, including real
 - [Screenshots](#-screenshots)
 - [Tech Stack](#️-tech-stack)
 - [Features](#️-features)
-  - [Login Credentials](#1-login-credentials)
 - [Registration Instructions](#-registration-instructions)
 - [Prerequisites](#-prerequisites)
 - [Installation](#-installation)
